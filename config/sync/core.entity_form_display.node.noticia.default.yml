@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.noticia.field_fecha
     - field.field.node.noticia.field_imagen
     - field.field.node.noticia.field_lugar
-    - field.field.node.noticia.field_tit
     - node.type.noticia
   module:
     - path
@@ -59,14 +58,6 @@ content:
     region: content
   field_lugar:
     weight: 124
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
-  field_tit:
-    weight: 126
     settings:
       size: 60
       placeholder: ''

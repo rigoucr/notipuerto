@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.noticia.field_fecha
     - field.field.node.noticia.field_imagen
     - field.field.node.noticia.field_lugar
-    - field.field.node.noticia.field_tit
     - node.type.noticia
   module:
     - text
@@ -54,14 +53,6 @@ content:
     region: content
   field_lugar:
     weight: 104
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_tit:
-    weight: 106
     label: above
     settings:
       link_to_entity: false

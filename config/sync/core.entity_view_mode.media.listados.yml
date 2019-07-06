@@ -1,0 +1,10 @@
+uuid: 7b4f57d3-4525-4411-96ad-c7557ebd7657
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.listados
+label: Listados
+targetEntityType: media
+cache: true

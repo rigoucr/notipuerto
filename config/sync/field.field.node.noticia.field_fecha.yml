@@ -1,10 +1,12 @@
-uuid: f25ee80d-f8e9-4182-831b-d0c9743efe21
+uuid: 6b98f94f-60f8-44a1-9646-83407d83404f
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_fecha
     - node.type.noticia
+  module:
+    - datetime
 id: node.noticia.field_fecha
 field_name: field_fecha
 entity_type: node
@@ -13,9 +15,7 @@ label: Fecha
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    value: 1562439164
+default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: timestamp
+field_type: datetime

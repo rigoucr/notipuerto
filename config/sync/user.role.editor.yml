@@ -1,0 +1,40 @@
+uuid: b2789eb6-4507-43e7-8fb5-19b43380f26c
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer nodes'
+  - 'create file media'
+  - 'create media'
+  - 'create noticia content'
+  - 'create terms in categoria_de_'
+  - 'create terms in tags'
+  - 'delete any image media'
+  - 'delete any noticia content'
+  - 'delete media'
+  - 'delete own noticia content'
+  - 'delete terms in categoria_de_'
+  - 'delete terms in tags'
+  - 'edit any image media'
+  - 'edit any noticia content'
+  - 'edit own image media'
+  - 'edit own noticia content'
+  - 'edit terms in categoria_de_'
+  - 'edit terms in tags'
+  - 'manipulate all entityqueues'
+  - 'revert noticia revisions'
+  - 'update any media'
+  - 'update media'
+  - 'update noticias entityqueue'
+  - 'view noticia revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'

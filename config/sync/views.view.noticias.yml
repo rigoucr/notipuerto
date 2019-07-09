@@ -8,7 +8,7 @@ dependencies:
     - field.storage.node.field_categoria
     - field.storage.node.field_imagen
     - node.type.noticia
-    - taxonomy.vocabulary.categoria_de_
+    - taxonomy.vocabulary.categoria_de_noticias
   module:
     - better_exposed_filters
     - datetime
@@ -532,12 +532,7 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships:
-        field_categoria:
-          id: field_categoria
-          table: node__field_categoria
-          field: field_categoria
-          plugin_id: standard
+      relationships: {  }
       arguments:
         tid:
           id: tid
@@ -660,7 +655,7 @@ display:
             node: true
             limit: true
             vids:
-              categoria_de_: categoria_de_
+              categoria_de_noticias: categoria_de_noticias
             anyall: +
             term_page: '0'
           default_argument_skip_url: true
@@ -673,7 +668,7 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
             type: none
             fail: 'not found'
@@ -1044,6 +1039,8 @@ display:
       group_by: false
       defaults:
         group_by: false
+        arguments: false
+      arguments: {  }
     cache_metadata:
       max-age: -1
       contexts:

@@ -12,12 +12,21 @@ dependencies:
     - node.type.noticia
   module:
     - media
+    - text
     - user
 id: node.noticia.teaser
 targetEntityType: node
 bundle: noticia
 mode: teaser
 content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 300
+    third_party_settings: {  }
   field_imagen:
     type: media_thumbnail
     weight: 0
@@ -28,12 +37,11 @@ content:
       image_link: ''
     third_party_settings: {  }
   links:
-    weight: 1
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   field_categoria: true
   field_fecha: true
   field_lugar: true

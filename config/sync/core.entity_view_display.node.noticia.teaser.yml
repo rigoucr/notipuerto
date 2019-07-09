@@ -6,38 +6,34 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.noticia.body
     - field.field.node.noticia.field_categoria
+    - field.field.node.noticia.field_fecha
     - field.field.node.noticia.field_imagen
     - field.field.node.noticia.field_lugar
     - node.type.noticia
   module:
-    - text
+    - media
     - user
 id: node.noticia.teaser
 targetEntityType: node
 bundle: noticia
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_imagen:
-    type: entity_reference_label
-    weight: 1
+    type: media_thumbnail
+    weight: 0
     region: content
-    label: above
+    label: hidden
     settings:
-      link: true
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   field_categoria: true
+  field_fecha: true
   field_lugar: true

@@ -1,0 +1,29 @@
+uuid: 0cac6073-1939-42c5-b6f7-f98eb671aa30
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.noticias
+id: entity_subqueue.noticias.default
+targetEntityType: entity_subqueue
+bundle: noticias
+mode: default
+content:
+  items:
+    label: hidden
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  title:
+    label: hidden
+    type: string
+    weight: -10
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

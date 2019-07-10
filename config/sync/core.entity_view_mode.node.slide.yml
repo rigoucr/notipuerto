@@ -1,0 +1,10 @@
+uuid: 021ac156-2d59-4f75-bb43-6fdf06790a8b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.slide
+label: Slide
+targetEntityType: node
+cache: true

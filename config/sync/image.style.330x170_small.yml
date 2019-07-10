@@ -1,0 +1,15 @@
+uuid: e97d05bf-5673-4c05-aac3-54039b1639c4
+langcode: en
+status: true
+dependencies: {  }
+name: 330x170_small
+label: '330x170 small'
+effects:
+  ec82329b-5cee-48ba-ba86-7dca20cfd47c:
+    uuid: ec82329b-5cee-48ba-ba86-7dca20cfd47c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 330
+      height: 170
+      anchor: center-center

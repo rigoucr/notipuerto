@@ -1,11 +1,11 @@
-uuid: 224a685a-9d43-40d7-bc7b-77b027cf580a
+uuid: 13a8efb2-f3b9-4db8-9e7f-a5e7db1cef14
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.listados
+    - core.entity_view_mode.media.full
     - field.field.media.image.field_media_image
-    - image.style.330x170_small
+    - image.style.800x350_medium
     - media.type.image
   module:
     - image
@@ -16,15 +16,15 @@ third_party_settings:
     enabled: false
 _core:
   default_config_hash: jOwnt_yq6AKAfqU6f0xKnxEkFQ2eTPJWxrk3WMLbL68
-id: media.image.listados
+id: media.image.full
 targetEntityType: media
 bundle: image
-mode: listados
+mode: full
 content:
   field_media_image:
     label: visually_hidden
     settings:
-      image_style: 330x170_small
+      image_style: 800x350_medium
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.noticia.field_lugar
     - node.type.noticia
   module:
-    - media
     - text
     - user
 id: node.noticia.teaser
@@ -25,16 +24,16 @@ content:
     region: content
     label: hidden
     settings:
-      trim_length: 300
+      trim_length: 200
     third_party_settings: {  }
   field_imagen:
-    type: media_thumbnail
+    type: entity_reference_entity_view
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      view_mode: listados
+      link: false
     third_party_settings: {  }
   links:
     weight: 2

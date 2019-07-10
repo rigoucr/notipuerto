@@ -1,0 +1,15 @@
+uuid: 3324bb0d-d462-47f1-9691-8a826a625061
+langcode: en
+status: true
+dependencies: {  }
+name: 500x700_medium
+label: '500x700 Medium'
+effects:
+  68d41abf-205b-4595-a1da-2a1068e9ebfd:
+    uuid: 68d41abf-205b-4595-a1da-2a1068e9ebfd
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 500
+      anchor: center-center

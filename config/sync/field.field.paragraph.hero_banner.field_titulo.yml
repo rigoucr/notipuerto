@@ -1,0 +1,19 @@
+uuid: 9a690001-c565-43c4-ad72-6bd3bb355f81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: hero_banner
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

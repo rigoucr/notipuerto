@@ -1,0 +1,41 @@
+uuid: e03004a0-c878-4b89-826b-91eaa46b83b4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero_banner:d3a1b93d-7e90-47ca-97df-b36e6be07ef6'
+  module:
+    - block_content
+    - ctools
+    - node
+  theme:
+    - bartik
+id: noticiaindividual
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:d3a1b93d-7e90-47ca-97df-b36e6be07ef6'
+settings:
+  id: 'block_content:d3a1b93d-7e90-47ca-97df-b36e6be07ef6'
+  label: 'Noticia Individual'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      noticia: noticia
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  node_type:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

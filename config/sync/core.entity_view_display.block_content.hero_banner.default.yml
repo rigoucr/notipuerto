@@ -1,0 +1,32 @@
+uuid: ed279942-b1d9-43be-a202-a8076b3cd79f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_banner
+    - field.field.block_content.hero_banner.body
+    - field.field.block_content.hero_banner.field_block_media
+  module:
+    - text
+id: block_content.hero_banner.default
+targetEntityType: block_content
+bundle: hero_banner
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_block_media:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }
